@@ -19,9 +19,9 @@ body
 
     .grid__item
     {
-        background-color: #000;
+        background-color: @default-colour;
         font-size:        50px;
-        color:            #fff;
+        color:            @text-colour;
         padding-left:     10px;
     }
 }
@@ -256,7 +256,7 @@ body
     ul
     {
         list-style: none;
-        display:    subgrid;
+        //display:    subgrid;
         display:    contents;
 
         li
@@ -266,7 +266,7 @@ body
     }
 }
 
-.grid--11
+.grid--10
 {
     grid-template-columns: 100px 1fr 1fr 1fr;
     grid-template-rows:    100px 1fr 1fr 1fr 25px 100px;

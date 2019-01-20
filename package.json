@@ -15,7 +15,6 @@
     "gulp-less": "^4.0.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
-    "gulp-print": "^5.0.0",
     "gulp-rename": "^1.4.0",
     "run-sequence": "^2.2.1"
   },
