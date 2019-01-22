@@ -18,7 +18,7 @@ gulp.task("style", function () {
         .pipe(less())
         .pipe(postcss([
             autoprefixer({
-                // grid: true,
+                grid: true,
                 browsers: [
                     "last 2 versions"
                 ]
@@ -28,7 +28,6 @@ gulp.task("style", function () {
             })
         ]))
 
-        // .pipe(gulp.dest("build/css"))
         .pipe(minify())
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest("build/css"))
@@ -63,9 +62,6 @@ gulp.task("refresh", function (done) {
 
 gulp.task("copy", function () {
     return gulp.src([
-        // "fonts/**/*.{woff,woff2}",
-        // "img/**",
-        // "js/**",
         "*.html"
     ], {
         base: "."

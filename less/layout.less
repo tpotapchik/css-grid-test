@@ -31,12 +31,19 @@ body
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap:              10px;
     grid-template-rows:    1fr;
+    grid-template-areas: "a a a";
+
+    .grid__item {
+        grid-template-area: a;
+    }
+
 }
 
 .grid--2
 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:              10px;
+    grid-column-gap:       1px;
+    grid-row-gap:          10px;
 
     .grid__item--1
     {
@@ -117,6 +124,15 @@ body
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:    1fr 1fr 1fr 1fr;
     grid-gap:              1px;
+    grid-template-areas:   "a a a"
+                           "a a a"
+                           "a a a"
+                           "a a a";
+
+    .grid__item
+    {
+        grid-template-area: a;
+    }
 
     .grid__item--1
     {
